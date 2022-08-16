@@ -13,10 +13,10 @@ public static class MauiProgram
             {
 #if MACCATALYST
                     events.AddiOS(ios => ios
-                        .OnActivated((scene) => LogEvent("OnActivated"))
-                        .OnResignActivation((scene) => LogEvent("OnResignActivation"))
-                        .DidEnterBackground((scene) => LogEvent("DidEnterBackground"))
-                        .WillTerminate((scene) => LogEvent("WillTerminate"))
+                        .OnActivated((app) => LogEvent("OnActivated"))
+                        .OnResignActivation((app) => LogEvent("OnResignActivation"))
+                        .DidEnterBackground((app) => LogEvent("DidEnterBackground"))
+                        .WillTerminate((app) => LogEvent("WillTerminate"))
                         .SceneDidDisconnect((scene) => LogEvent("SceneDidDisconnect"))
                         .SceneWillConnect((scene, session, connectionOptions) => LogEvent("SceneWillConnect")));
 #endif

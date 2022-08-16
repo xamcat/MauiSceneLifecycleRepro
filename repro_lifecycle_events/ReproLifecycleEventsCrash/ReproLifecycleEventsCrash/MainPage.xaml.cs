@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
 	private void OnNewWindowClicked(object sender, EventArgs e)
 	{
 		pageCount++;
-		Window secondWindow = new Window(new SweekyWindow(pageCount));
+		Window secondWindow = new MyWindow(new SweekyWindow(pageCount));
 		Application.Current.OpenWindow(secondWindow);
 	}
 

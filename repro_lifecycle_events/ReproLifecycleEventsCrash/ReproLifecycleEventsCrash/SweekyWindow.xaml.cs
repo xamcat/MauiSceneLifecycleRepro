@@ -9,5 +9,4 @@ public partial class SweekyWindow : ContentPage
 		InitializeComponent();
 		this.titleLabel.Text = $"WINDOW COUNT {pageCount}";
 	}
-
 }
